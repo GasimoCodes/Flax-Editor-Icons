@@ -23,11 +23,13 @@ def get_icons(icon_dir):
 def url_encode(path):
     return path.replace(" ", "%20")
 
-# Generate a Markdown table with 6 columns for the icons (without headers)
+# Generate a Markdown table with 6 columns for the icons
 def generate_markdown_table(icons):
     table = ""
     for category, icon_list in sorted(icons.items()):
         table += f"### {category}\n\n"
+        table += "| " + " | ".join(["Icon", "Name"] * columns) + " |\n"
+        table += "| " + " | ".join([":-:", ":-:"] * columns) + " |\n"
         
         row_items = []
         for subcategory, icon_name in sorted(icon_list):
@@ -35,17 +37,17 @@ def generate_markdown_table(icons):
             icon_display_name = icon_name.replace(".png", "")
             icon_img = f"![icon]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
-            row_items.append(f"{icon_img}<br>{icon_link_name}")
+            row_items.append(f"{icon_img} | {icon_link_name}")
             
             # When we hit the column limit, write the row
-            if len(row_items) == columns:
+            if len(row_items) == columns * 2:
                 table += "| " + " | ".join(row_items) + " |\n"
                 row_items = []
 
         # Add remaining items in the row if any
         if row_items:
             # Pad the row with empty cells if it doesn't fill all columns
-            while len(row_items) < columns:
+            while len(row_items) < columns * 2:
                 row_items.append(" ")
             table += "| " + " | ".join(row_items) + " |\n"
 
