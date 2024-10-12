@@ -1,0 +1,92 @@
+name: Generate README
+
+on:
+  push:
+    paths:
+      - 'Icons/**'
+      - 'readmehead.md'
+  workflow_dispatch:
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install PyGithub
+
+      - name: Generate README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<EOF
+          import os
+          import re
+          from github import Github
+          
+          def get_icon_url(repo, path):
+              return f"https://github.com/{repo.full_name}/blob/main/{path}"
+          
+          def generate_table(icons):
+              table = "| Icon | Name | Category |\n|------|------|----------|\n"
+              for icon in sorted(icons, key=lambda x: (x['category'], x['subcategory'], x['name'])):
+                  table += f"| ![{icon['name']}]({icon['path']}) | [{icon['name']}]({icon['url']}) | {icon['category']}/{icon['subcategory']} |\n"
+              return table
+          
+          # Initialize GitHub client
+          g = Github(os.environ['GITHUB_TOKEN'])
+          repo = g.get_repo(os.environ['GITHUB_REPOSITORY'])
+          
+          # Get all icon files
+          icons = []
+          contents = repo.get_contents("Icons")
+          while contents:
+              file_content = contents.pop(0)
+              if file_content.type == "dir":
+                  contents.extend(repo.get_contents(file_content.path))
+              else:
+                  if file_content.name.endswith('.png') and '@4x' not in file_content.name:
+                      match = re.match(r'(.+)=(.+)\.png', file_content.name)
+                      if match:
+                          subcategory, name = match.groups()
+                          category = os.path.basename(os.path.dirname(file_content.path))
+                          icons.append({
+                              'name': name,
+                              'path': file_content.path,
+                              'url': get_icon_url(repo, file_content.path),
+                              'category': category,
+                              'subcategory': subcategory
+                          })
+          
+          # Generate README content
+          with open('readmehead.md', 'r') as f:
+              readme_content = f.read()
+          
+          readme_content += "\n\n## Icons\n\n"
+          readme_content += generate_table(icons)
+          
+          # Update README.md
+          readme_file = repo.get_contents("README.md")
+          repo.update_file(
+              path="README.md",
+              message="Update README with latest icons",
+              content=readme_content,
+              sha=readme_file.sha
+          )
+          
+          print("README.md has been updated successfully.")
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README with latest icons" || echo "No changes to commit"
+          git push
