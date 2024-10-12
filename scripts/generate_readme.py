@@ -18,29 +18,38 @@ def get_icons(icon_dir):
                 icons[category].append((subcategory, icon_name))
     return icons
 
-# Generate markdown table from icons
-def generate_table(icons):
-    table = ""
+# Convert the file path to a URL-friendly format (handles spaces and special characters)
+def url_encode(path):
+    return path.replace(" ", "%20")
+
+# Generate a grid layout using HTML for the icons
+def generate_grid(icons):
+    grid = ""
     for category, icon_list in sorted(icons.items()):
-        table += f"### {category}\n\n"
-        table += "| Icon | Name |\n|---|---|\n"
+        grid += f"### {category}\n\n"
+        grid += '<div style="display: flex; flex-wrap: wrap;">\n'
         for subcategory, icon_name in sorted(icon_list):
-            icon_link = f"./Icons/{category}/{subcategory}={icon_name}"
+            icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
             icon_display_name = icon_name.replace(".png", "")
-            table += f"| ![icon]({icon_link}) | [{icon_display_name}]({icon_link}) |\n"
-        table += "\n"
-    return table
+            grid += f'''
+            <div style="width: 120px; text-align: center; margin: 10px;">
+                <img src="{icon_link}" alt="{icon_display_name}" width="64" height="64"><br>
+                <a href="{icon_link}">{icon_display_name}</a>
+            </div>
+            '''
+        grid += '</div>\n\n'
+    return grid
 
 # Read the readme head
 with open(readme_head, "r") as f:
     readme_content = f.read()
 
-# Get icons and generate table
+# Get icons and generate grid
 icons = get_icons(icon_dir)
-icon_table = generate_table(icons)
+icon_grid = generate_grid(icons)
 
 # Write the final README.md
 with open(readme_file, "w") as f:
-    f.write(readme_content + "\n" + icon_table)
+    f.write(readme_content + "\n" + icon_grid)
 
 print("README.md has been updated successfully!")
