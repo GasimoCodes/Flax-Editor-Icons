@@ -32,11 +32,11 @@ def generate_grid(icons):
             icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
             icon_display_name = icon_name.replace(".png", "")
             grid += f'''
-            <div style="width: 120px; text-align: center; margin: 10px;">
-                <img src="{icon_link}" alt="{icon_display_name}" width="64" height="64"><br>
-                <a href="{icon_link}">{icon_display_name}</a>
-            </div>
-            '''
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="{icon_link}" alt="{icon_display_name}" width="64" height="64"><br>
+    <a href="{icon_link}">{icon_display_name}</a>
+</div>
+'''
         grid += '</div>\n\n'
     return grid
 
