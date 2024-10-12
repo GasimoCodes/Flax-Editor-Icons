@@ -1,162 +1,676 @@
 # Flax-Editor-Icons
 
 Ever-growing repository of [Flax Engine](https://github.com/FlaxEngine/FlaxEngine) icons.
- 
-![gasimo-slide-16-9-1](https://github.com/GasimoCodes/Flax-Editor-Icons/assets/22917863/03620d9c-6214-47e3-9769-e9a0619d8d8d)
-![gasimo-slide-16-9-5](https://github.com/GasimoCodes/Flax-Editor-Icons/assets/22917863/61c6383a-cb45-448b-8153-87d4a15ddcc7)
+
 
 
 ### Actions
 
-| Icon | Name |
-|---|---|
-| ![icon](./Icons/Actions/Action=AddActor.png) | [AddActor](./Icons/Actions/Action=AddActor.png) |
-| ![icon](./Icons/Actions/Action=Duplicate.png) | [Duplicate](./Icons/Actions/Action=Duplicate.png) |
-| ![icon](./Icons/Actions/Animation=Animation7.png) | [Animation7](./Icons/Actions/Animation=Animation7.png) |
-| ![icon](./Icons/Actions/Animation=Mute.png) | [Mute](./Icons/Actions/Animation=Mute.png) |
-| ![icon](./Icons/Actions/Animation=Pause.png) | [Pause](./Icons/Actions/Animation=Pause.png) |
-| ![icon](./Icons/Actions/Animation=Play.png) | [Play](./Icons/Actions/Animation=Play.png) |
-| ![icon](./Icons/Actions/Animation=Record.png) | [Record](./Icons/Actions/Animation=Record.png) |
-| ![icon](./Icons/Actions/Animation=Solo.png) | [Solo](./Icons/Actions/Animation=Solo.png) |
-| ![icon](./Icons/Actions/Animation=StepBackward.png) | [StepBackward](./Icons/Actions/Animation=StepBackward.png) |
-| ![icon](./Icons/Actions/Animation=StepForward.png) | [StepForward](./Icons/Actions/Animation=StepForward.png) |
-| ![icon](./Icons/Actions/Generic=Add.png) | [Add](./Icons/Actions/Generic=Add.png) |
-| ![icon](./Icons/Actions/Generic=Backward.png) | [Backward](./Icons/Actions/Generic=Backward.png) |
-| ![icon](./Icons/Actions/Generic=Down.png) | [Down](./Icons/Actions/Generic=Down.png) |
-| ![icon](./Icons/Actions/Generic=Forward.png) | [Forward](./Icons/Actions/Generic=Forward.png) |
-| ![icon](./Icons/Actions/Generic=Hammer.png) | [Hammer](./Icons/Actions/Generic=Hammer.png) |
-| ![icon](./Icons/Actions/Generic=HammerBox.png) | [HammerBox](./Icons/Actions/Generic=HammerBox.png) |
-| ![icon](./Icons/Actions/Generic=HammerGrid.png) | [HammerGrid](./Icons/Actions/Generic=HammerGrid.png) |
-| ![icon](./Icons/Actions/Generic=HammerGridPersp.png) | [HammerGridPersp](./Icons/Actions/Generic=HammerGridPersp.png) |
-| ![icon](./Icons/Actions/Generic=OpenFolder.png) | [OpenFolder](./Icons/Actions/Generic=OpenFolder.png) |
-| ![icon](./Icons/Actions/Generic=Package.png) | [Package](./Icons/Actions/Generic=Package.png) |
-| ![icon](./Icons/Actions/Generic=Redo.png) | [Redo](./Icons/Actions/Generic=Redo.png) |
-| ![icon](./Icons/Actions/Generic=Remove.png) | [Remove](./Icons/Actions/Generic=Remove.png) |
-| ![icon](./Icons/Actions/Generic=Save.png) | [Save](./Icons/Actions/Generic=Save.png) |
-| ![icon](./Icons/Actions/Generic=Search.png) | [Search](./Icons/Actions/Generic=Search.png) |
-| ![icon](./Icons/Actions/Generic=Undo.png) | [Undo](./Icons/Actions/Generic=Undo.png) |
-| ![icon](./Icons/Actions/Generic=Up.png) | [Up](./Icons/Actions/Generic=Up.png) |
-| ![icon](./Icons/Actions/Terrain=Accent.png) | [Accent](./Icons/Actions/Terrain=Accent.png) |
-| ![icon](./Icons/Actions/Terrain=Hole.png) | [Hole](./Icons/Actions/Terrain=Hole.png) |
-| ![icon](./Icons/Actions/Terrain=Noise.png) | [Noise](./Icons/Actions/Terrain=Noise.png) |
-| ![icon](./Icons/Actions/Terrain=Sculpt.png) | [Sculpt](./Icons/Actions/Terrain=Sculpt.png) |
-| ![icon](./Icons/Actions/Terrain=SetHeight.png) | [SetHeight](./Icons/Actions/Terrain=SetHeight.png) |
-| ![icon](./Icons/Actions/Terrain=Smooth.png) | [Smooth](./Icons/Actions/Terrain=Smooth.png) |
+<div style="display: flex; flex-wrap: wrap;">
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Action=AddActor.png" alt="AddActor" width="64" height="64"><br>
+    <a href="./Icons/Actions/Action=AddActor.png">AddActor</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Action=Duplicate.png" alt="Duplicate" width="64" height="64"><br>
+    <a href="./Icons/Actions/Action=Duplicate.png">Duplicate</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=Mute.png" alt="Mute" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=Mute.png">Mute</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=Pause.png" alt="Pause" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=Pause.png">Pause</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=Play.png" alt="Play" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=Play.png">Play</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=Record.png" alt="Record" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=Record.png">Record</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=Solo.png" alt="Solo" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=Solo.png">Solo</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=StepBackward.png" alt="StepBackward" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=StepBackward.png">StepBackward</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=StepForward.png" alt="StepForward" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=StepForward.png">StepForward</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Animation=Stop.png" alt="Stop" width="64" height="64"><br>
+    <a href="./Icons/Actions/Animation=Stop.png">Stop</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Add.png" alt="Add" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Add.png">Add</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Backward.png" alt="Backward" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Backward.png">Backward</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Down.png" alt="Down" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Down.png">Down</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Forward.png" alt="Forward" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Forward.png">Forward</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Hammer.png" alt="Hammer" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Hammer.png">Hammer</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=HammerBox.png" alt="HammerBox" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=HammerBox.png">HammerBox</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=HammerGrid.png" alt="HammerGrid" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=HammerGrid.png">HammerGrid</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=HammerGridPersp.png" alt="HammerGridPersp" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=HammerGridPersp.png">HammerGridPersp</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=OpenFolder.png" alt="OpenFolder" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=OpenFolder.png">OpenFolder</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Package.png" alt="Package" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Package.png">Package</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Redo.png" alt="Redo" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Redo.png">Redo</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Remove.png" alt="Remove" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Remove.png">Remove</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Save.png" alt="Save" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Save.png">Save</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Search.png" alt="Search" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Search.png">Search</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Undo.png" alt="Undo" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Undo.png">Undo</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Generic=Up.png" alt="Up" width="64" height="64"><br>
+    <a href="./Icons/Actions/Generic=Up.png">Up</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Terrain=Accent.png" alt="Accent" width="64" height="64"><br>
+    <a href="./Icons/Actions/Terrain=Accent.png">Accent</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Terrain=Hole.png" alt="Hole" width="64" height="64"><br>
+    <a href="./Icons/Actions/Terrain=Hole.png">Hole</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Terrain=Noise.png" alt="Noise" width="64" height="64"><br>
+    <a href="./Icons/Actions/Terrain=Noise.png">Noise</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Terrain=Sculpt.png" alt="Sculpt" width="64" height="64"><br>
+    <a href="./Icons/Actions/Terrain=Sculpt.png">Sculpt</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Terrain=SetHeight.png" alt="SetHeight" width="64" height="64"><br>
+    <a href="./Icons/Actions/Terrain=SetHeight.png">SetHeight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actions/Terrain=Smooth.png" alt="Smooth" width="64" height="64"><br>
+    <a href="./Icons/Actions/Terrain=Smooth.png">Smooth</a>
+</div>
+</div>
 
 ### Actors
 
-| Icon | Name |
-|---|---|
-| ![icon](./Icons/Actors/Actor=Actor Volume.png) | [Actor Volume](./Icons/Actors/Actor=Actor Volume.png) |
-| ![icon](./Icons/Actors/Actor=Actor.png) | [Actor](./Icons/Actors/Actor=Actor.png) |
-| ![icon](./Icons/Actors/Actor=Grid_Env.png) | [Grid_Env](./Icons/Actors/Actor=Grid_Env.png) |
-| ![icon](./Icons/Actors/Actor=Grid_Env_Flat.png) | [Grid_Env_Flat](./Icons/Actors/Actor=Grid_Env_Flat.png) |
-| ![icon](./Icons/Actors/Actor=Model.png) | [Model](./Icons/Actors/Actor=Model.png) |
-| ![icon](./Icons/Actors/Actor=Prefab.png) | [Prefab](./Icons/Actors/Actor=Prefab.png) |
-| ![icon](./Icons/Actors/Actor=Skinned Model.png) | [Skinned Model](./Icons/Actors/Actor=Skinned Model.png) |
-| ![icon](./Icons/Actors/Actor=Transform.png) | [Transform](./Icons/Actors/Actor=Transform.png) |
-| ![icon](./Icons/Actors/Audio=Audio Listener.png) | [Audio Listener](./Icons/Actors/Audio=Audio Listener.png) |
-| ![icon](./Icons/Actors/Audio=Audio Source.png) | [Audio Source](./Icons/Actors/Audio=Audio Source.png) |
-| ![icon](./Icons/Actors/Lighting=Directional Light.png) | [Directional Light](./Icons/Actors/Lighting=Directional Light.png) |
-| ![icon](./Icons/Actors/Lighting=Environment Light.png) | [Environment Light](./Icons/Actors/Lighting=Environment Light.png) |
-| ![icon](./Icons/Actors/Lighting=Point Light.png) | [Point Light](./Icons/Actors/Lighting=Point Light.png) |
-| ![icon](./Icons/Actors/Lighting=Reflection Probe.png) | [Reflection Probe](./Icons/Actors/Lighting=Reflection Probe.png) |
-| ![icon](./Icons/Actors/Lighting=Spot Light.png) | [Spot Light](./Icons/Actors/Lighting=Spot Light.png) |
-| ![icon](./Icons/Actors/Lighting_White=Directional Light.png) | [Directional Light](./Icons/Actors/Lighting_White=Directional Light.png) |
-| ![icon](./Icons/Actors/Lighting_White=Environment Light.png) | [Environment Light](./Icons/Actors/Lighting_White=Environment Light.png) |
-| ![icon](./Icons/Actors/Lighting_White=Point Light.png) | [Point Light](./Icons/Actors/Lighting_White=Point Light.png) |
-| ![icon](./Icons/Actors/Lighting_White=SpotLight.png) | [SpotLight](./Icons/Actors/Lighting_White=SpotLight.png) |
-| ![icon](./Icons/Actors/Misc=MovieReel.png) | [MovieReel](./Icons/Actors/Misc=MovieReel.png) |
-| ![icon](./Icons/Actors/Misc=Spline.png) | [Spline](./Icons/Actors/Misc=Spline.png) |
-| ![icon](./Icons/Actors/Misc=Timeline.png) | [Timeline](./Icons/Actors/Misc=Timeline.png) |
-| ![icon](./Icons/Actors/Navigation=Landmark.png) | [Landmark](./Icons/Actors/Navigation=Landmark.png) |
-| ![icon](./Icons/Actors/Navigation=Modify.png) | [Modify](./Icons/Actors/Navigation=Modify.png) |
-| ![icon](./Icons/Actors/Navigation=NavMesh Agent.png) | [NavMesh Agent](./Icons/Actors/Navigation=NavMesh Agent.png) |
-| ![icon](./Icons/Actors/Navigation=NavMesh Link.png) | [NavMesh Link](./Icons/Actors/Navigation=NavMesh Link.png) |
-| ![icon](./Icons/Actors/Navigation=NavMesh Modifier.png) | [NavMesh Modifier](./Icons/Actors/Navigation=NavMesh Modifier.png) |
-| ![icon](./Icons/Actors/Navigation=NavMesh.png) | [NavMesh](./Icons/Actors/Navigation=NavMesh.png) |
-| ![icon](./Icons/Actors/Physics=Bone.png) | [Bone](./Icons/Actors/Physics=Bone.png) |
-| ![icon](./Icons/Actors/Physics=Collider.png) | [Collider](./Icons/Actors/Physics=Collider.png) |
-| ![icon](./Icons/Actors/Physics=FragileBox.png) | [FragileBox](./Icons/Actors/Physics=FragileBox.png) |
-| ![icon](./Icons/Actors/Physics=FragileGlass.png) | [FragileGlass](./Icons/Actors/Physics=FragileGlass.png) |
-| ![icon](./Icons/Actors/Physics=MeshCollider.png) | [MeshCollider](./Icons/Actors/Physics=MeshCollider.png) |
-| ![icon](./Icons/Actors/Post=PostFX.png) | [PostFX](./Icons/Actors/Post=PostFX.png) |
-| ![icon](./Icons/Actors/Rendering=Camera.png) | [Camera](./Icons/Actors/Rendering=Camera.png) |
-| ![icon](./Icons/Actors/Rendering=Decals.png) | [Decals](./Icons/Actors/Rendering=Decals.png) |
-| ![icon](./Icons/Actors/Rendering=ParticleFX.png) | [ParticleFX](./Icons/Actors/Rendering=ParticleFX.png) |
-| ![icon](./Icons/Actors/Rendering=VideoPlayer.png) | [VideoPlayer](./Icons/Actors/Rendering=VideoPlayer.png) |
-| ![icon](./Icons/Actors/Sky=Height Fog.png) | [Height Fog](./Icons/Actors/Sky=Height Fog.png) |
-| ![icon](./Icons/Actors/Sky=Sky.png) | [Sky](./Icons/Actors/Sky=Sky.png) |
-| ![icon](./Icons/Actors/Sky=Skybox.png) | [Skybox](./Icons/Actors/Sky=Skybox.png) |
-| ![icon](./Icons/Actors/UI=Button.png) | [Button](./Icons/Actors/UI=Button.png) |
-| ![icon](./Icons/Actors/UI=Canvas.png) | [Canvas](./Icons/Actors/UI=Canvas.png) |
-| ![icon](./Icons/Actors/UI=Dropdown.png) | [Dropdown](./Icons/Actors/UI=Dropdown.png) |
-| ![icon](./Icons/Actors/UI=Grid.png) | [Grid](./Icons/Actors/UI=Grid.png) |
-| ![icon](./Icons/Actors/UI=Horizontal.png) | [Horizontal](./Icons/Actors/UI=Horizontal.png) |
-| ![icon](./Icons/Actors/UI=Image.png) | [Image](./Icons/Actors/UI=Image.png) |
-| ![icon](./Icons/Actors/UI=Label.png) | [Label](./Icons/Actors/UI=Label.png) |
-| ![icon](./Icons/Actors/UI=ProgressBar.png) | [ProgressBar](./Icons/Actors/UI=ProgressBar.png) |
-| ![icon](./Icons/Actors/UI=Slider.png) | [Slider](./Icons/Actors/UI=Slider.png) |
-| ![icon](./Icons/Actors/UI=TextField.png) | [TextField](./Icons/Actors/UI=TextField.png) |
-| ![icon](./Icons/Actors/UI=Vertical.png) | [Vertical](./Icons/Actors/UI=Vertical.png) |
-| ![icon](./Icons/Actors/Volume=AmbianceVolume.png) | [AmbianceVolume](./Icons/Actors/Volume=AmbianceVolume.png) |
-| ![icon](./Icons/Actors/Volume=Fog Volume.png) | [Fog Volume](./Icons/Actors/Volume=Fog Volume.png) |
-| ![icon](./Icons/Actors/Volume=PostFX.png) | [PostFX](./Icons/Actors/Volume=PostFX.png) |
-| ![icon](./Icons/Actors/Volume=VolumeEmpty.png) | [VolumeEmpty](./Icons/Actors/Volume=VolumeEmpty.png) |
+<div style="display: flex; flex-wrap: wrap;">
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=Actor.png" alt="Actor" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=Actor.png">Actor</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=ActorVolume.png" alt="ActorVolume" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=ActorVolume.png">ActorVolume</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=GridEnv.png" alt="GridEnv" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=GridEnv.png">GridEnv</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=GridEnvFlat.png" alt="GridEnvFlat" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=GridEnvFlat.png">GridEnvFlat</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=Model.png" alt="Model" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=Model.png">Model</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=Prefab.png" alt="Prefab" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=Prefab.png">Prefab</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=SkinnedModel.png" alt="SkinnedModel" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=SkinnedModel.png">SkinnedModel</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Actor=Transform.png" alt="Transform" width="64" height="64"><br>
+    <a href="./Icons/Actors/Actor=Transform.png">Transform</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Audio=AudioListener.png" alt="AudioListener" width="64" height="64"><br>
+    <a href="./Icons/Actors/Audio=AudioListener.png">AudioListener</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Audio=AudioSource.png" alt="AudioSource" width="64" height="64"><br>
+    <a href="./Icons/Actors/Audio=AudioSource.png">AudioSource</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting=DirectionalLight.png" alt="DirectionalLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting=DirectionalLight.png">DirectionalLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting=EnvironmentLight.png" alt="EnvironmentLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting=EnvironmentLight.png">EnvironmentLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting=PointLight.png" alt="PointLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting=PointLight.png">PointLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting=ReflectionProbe.png" alt="ReflectionProbe" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting=ReflectionProbe.png">ReflectionProbe</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting=SpotLight.png" alt="SpotLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting=SpotLight.png">SpotLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting_White=DirectionalLight.png" alt="DirectionalLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting_White=DirectionalLight.png">DirectionalLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting_White=EnvironmentLight.png" alt="EnvironmentLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting_White=EnvironmentLight.png">EnvironmentLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting_White=PointLight.png" alt="PointLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting_White=PointLight.png">PointLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Lighting_White=SpotLight.png" alt="SpotLight" width="64" height="64"><br>
+    <a href="./Icons/Actors/Lighting_White=SpotLight.png">SpotLight</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Misc=MovieReel.png" alt="MovieReel" width="64" height="64"><br>
+    <a href="./Icons/Actors/Misc=MovieReel.png">MovieReel</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Misc=Spline.png" alt="Spline" width="64" height="64"><br>
+    <a href="./Icons/Actors/Misc=Spline.png">Spline</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Misc=Timeline.png" alt="Timeline" width="64" height="64"><br>
+    <a href="./Icons/Actors/Misc=Timeline.png">Timeline</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Navigation=Landmark.png" alt="Landmark" width="64" height="64"><br>
+    <a href="./Icons/Actors/Navigation=Landmark.png">Landmark</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Navigation=Modify.png" alt="Modify" width="64" height="64"><br>
+    <a href="./Icons/Actors/Navigation=Modify.png">Modify</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Navigation=NavMesh.png" alt="NavMesh" width="64" height="64"><br>
+    <a href="./Icons/Actors/Navigation=NavMesh.png">NavMesh</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Navigation=NavMeshAgent.png" alt="NavMeshAgent" width="64" height="64"><br>
+    <a href="./Icons/Actors/Navigation=NavMeshAgent.png">NavMeshAgent</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Navigation=NavMeshLink.png" alt="NavMeshLink" width="64" height="64"><br>
+    <a href="./Icons/Actors/Navigation=NavMeshLink.png">NavMeshLink</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Navigation=NavMeshModifier.png" alt="NavMeshModifier" width="64" height="64"><br>
+    <a href="./Icons/Actors/Navigation=NavMeshModifier.png">NavMeshModifier</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Physics=Bone.png" alt="Bone" width="64" height="64"><br>
+    <a href="./Icons/Actors/Physics=Bone.png">Bone</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Physics=Collider.png" alt="Collider" width="64" height="64"><br>
+    <a href="./Icons/Actors/Physics=Collider.png">Collider</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Physics=FragileBox.png" alt="FragileBox" width="64" height="64"><br>
+    <a href="./Icons/Actors/Physics=FragileBox.png">FragileBox</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Physics=FragileGlass.png" alt="FragileGlass" width="64" height="64"><br>
+    <a href="./Icons/Actors/Physics=FragileGlass.png">FragileGlass</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Physics=MeshCollider.png" alt="MeshCollider" width="64" height="64"><br>
+    <a href="./Icons/Actors/Physics=MeshCollider.png">MeshCollider</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Post=PostFX.png" alt="PostFX" width="64" height="64"><br>
+    <a href="./Icons/Actors/Post=PostFX.png">PostFX</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Rendering=Camera.png" alt="Camera" width="64" height="64"><br>
+    <a href="./Icons/Actors/Rendering=Camera.png">Camera</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Rendering=Decals.png" alt="Decals" width="64" height="64"><br>
+    <a href="./Icons/Actors/Rendering=Decals.png">Decals</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Rendering=ParticleFX.png" alt="ParticleFX" width="64" height="64"><br>
+    <a href="./Icons/Actors/Rendering=ParticleFX.png">ParticleFX</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Rendering=VideoPlayer.png" alt="VideoPlayer" width="64" height="64"><br>
+    <a href="./Icons/Actors/Rendering=VideoPlayer.png">VideoPlayer</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Sky=HeightFog.png" alt="HeightFog" width="64" height="64"><br>
+    <a href="./Icons/Actors/Sky=HeightFog.png">HeightFog</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Sky=Sky.png" alt="Sky" width="64" height="64"><br>
+    <a href="./Icons/Actors/Sky=Sky.png">Sky</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Sky=Skybox.png" alt="Skybox" width="64" height="64"><br>
+    <a href="./Icons/Actors/Sky=Skybox.png">Skybox</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Button.png" alt="Button" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Button.png">Button</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Canvas.png" alt="Canvas" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Canvas.png">Canvas</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Dropdown.png" alt="Dropdown" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Dropdown.png">Dropdown</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Grid.png" alt="Grid" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Grid.png">Grid</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Horizontal.png" alt="Horizontal" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Horizontal.png">Horizontal</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Image.png" alt="Image" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Image.png">Image</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Label.png" alt="Label" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Label.png">Label</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=ProgressBar.png" alt="ProgressBar" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=ProgressBar.png">ProgressBar</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Slider.png" alt="Slider" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Slider.png">Slider</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=TextField.png" alt="TextField" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=TextField.png">TextField</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/UI=Vertical.png" alt="Vertical" width="64" height="64"><br>
+    <a href="./Icons/Actors/UI=Vertical.png">Vertical</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Volume=AmbianceVolume.png" alt="AmbianceVolume" width="64" height="64"><br>
+    <a href="./Icons/Actors/Volume=AmbianceVolume.png">AmbianceVolume</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Volume=FogVolume.png" alt="FogVolume" width="64" height="64"><br>
+    <a href="./Icons/Actors/Volume=FogVolume.png">FogVolume</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Volume=PostFX.png" alt="PostFX" width="64" height="64"><br>
+    <a href="./Icons/Actors/Volume=PostFX.png">PostFX</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Actors/Volume=VolumeEmpty.png" alt="VolumeEmpty" width="64" height="64"><br>
+    <a href="./Icons/Actors/Volume=VolumeEmpty.png">VolumeEmpty</a>
+</div>
+</div>
 
 ### Files
 
-| Icon | Name |
-|---|---|
-| ![icon](./Icons/Files/File_Build=Build Config Android.png) | [Build Config Android](./Icons/Files/File_Build=Build Config Android.png) |
-| ![icon](./Icons/Files/File_Build=Build Config IOS.png) | [Build Config IOS](./Icons/Files/File_Build=Build Config IOS.png) |
-| ![icon](./Icons/Files/File_Build=Build Config Mac.png) | [Build Config Mac](./Icons/Files/File_Build=Build Config Mac.png) |
-| ![icon](./Icons/Files/File_Build=Build Config PS4.png) | [Build Config PS4](./Icons/Files/File_Build=Build Config PS4.png) |
-| ![icon](./Icons/Files/File_Build=Build Config PS5.png) | [Build Config PS5](./Icons/Files/File_Build=Build Config PS5.png) |
-| ![icon](./Icons/Files/File_Build=Build Config Switch.png) | [Build Config Switch](./Icons/Files/File_Build=Build Config Switch.png) |
-| ![icon](./Icons/Files/File_Build=Build Config Win.png) | [Build Config Win](./Icons/Files/File_Build=Build Config Win.png) |
-| ![icon](./Icons/Files/File_Build=Build Config XOne.png) | [Build Config XOne](./Icons/Files/File_Build=Build Config XOne.png) |
-| ![icon](./Icons/Files/File_Build=Build Config XX.png) | [Build Config XX](./Icons/Files/File_Build=Build Config XX.png) |
-| ![icon](./Icons/Files/File_Container=File.png) | [File](./Icons/Files/File_Container=File.png) |
-| ![icon](./Icons/Files/File_Container=Flax_Logo.png) | [Flax_Logo](./Icons/Files/File_Container=Flax_Logo.png) |
-| ![icon](./Icons/Files/File_Container=Folder.png) | [Folder](./Icons/Files/File_Container=Folder.png) |
-| ![icon](./Icons/Files/File_Container=JSON Script Instance.png) | [JSON Script Instance](./Icons/Files/File_Container=JSON Script Instance.png) |
-| ![icon](./Icons/Files/File_Container=Module.png) | [Module](./Icons/Files/File_Container=Module.png) |
-| ![icon](./Icons/Files/File_Content=Audio.png) | [Audio](./Icons/Files/File_Content=Audio.png) |
-| ![icon](./Icons/Files/File_Content=Bin.png) | [Bin](./Icons/Files/File_Content=Bin.png) |
-| ![icon](./Icons/Files/File_Content=Brackets.png) | [Brackets](./Icons/Files/File_Content=Brackets.png) |
-| ![icon](./Icons/Files/File_Content=Build.png) | [Build](./Icons/Files/File_Content=Build.png) |
-| ![icon](./Icons/Files/File_Content=Flax.png) | [Flax](./Icons/Files/File_Content=Flax.png) |
-| ![icon](./Icons/Files/File_Content=Markup.png) | [Markup](./Icons/Files/File_Content=Markup.png) |
-| ![icon](./Icons/Files/File_Content=Shader.png) | [Shader](./Icons/Files/File_Content=Shader.png) |
-| ![icon](./Icons/Files/File_Content=String.png) | [String](./Icons/Files/File_Content=String.png) |
-| ![icon](./Icons/Files/File_DataType=AudioClip.png) | [AudioClip](./Icons/Files/File_DataType=AudioClip.png) |
-| ![icon](./Icons/Files/File_DataType=Binary File.png) | [Binary File](./Icons/Files/File_DataType=Binary File.png) |
-| ![icon](./Icons/Files/File_DataType=C#.png) | [C#](./Icons/Files/File_DataType=C#.png) |
-| ![icon](./Icons/Files/File_DataType=CPP.png) | [CPP](./Icons/Files/File_DataType=CPP.png) |
-| ![icon](./Icons/Files/File_DataType=JSON.png) | [JSON](./Icons/Files/File_DataType=JSON.png) |
-| ![icon](./Icons/Files/File_DataType=Markdown.png) | [Markdown](./Icons/Files/File_DataType=Markdown.png) |
-| ![icon](./Icons/Files/File_DataType=Shader HLSL.png) | [Shader HLSL](./Icons/Files/File_DataType=Shader HLSL.png) |
-| ![icon](./Icons/Files/File_DataType=Text File.png) | [Text File](./Icons/Files/File_DataType=Text File.png) |
-| ![icon](./Icons/Files/File_DataType=XML.png) | [XML](./Icons/Files/File_DataType=XML.png) |
-| ![icon](./Icons/Files/File_FlaxSetting=Flax.png) | [Flax](./Icons/Files/File_FlaxSetting=Flax.png) |
+<div style="display: flex; flex-wrap: wrap;">
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20Android.png" alt="Build Config Android" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20Android.png">Build Config Android</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20IOS.png" alt="Build Config IOS" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20IOS.png">Build Config IOS</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20Mac.png" alt="Build Config Mac" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20Mac.png">Build Config Mac</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20PS4.png" alt="Build Config PS4" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20PS4.png">Build Config PS4</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20PS5.png" alt="Build Config PS5" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20PS5.png">Build Config PS5</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20Switch.png" alt="Build Config Switch" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20Switch.png">Build Config Switch</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20Win.png" alt="Build Config Win" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20Win.png">Build Config Win</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20XOne.png" alt="Build Config XOne" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20XOne.png">Build Config XOne</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Build=Build%20Config%20XX.png" alt="Build Config XX" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Build=Build%20Config%20XX.png">Build Config XX</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Container=File.png" alt="File" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Container=File.png">File</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Container=FlaxLogo.png" alt="FlaxLogo" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Container=FlaxLogo.png">FlaxLogo</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Container=Folder.png" alt="Folder" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Container=Folder.png">Folder</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Container=JSONScriptInstance.png" alt="JSONScriptInstance" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Container=JSONScriptInstance.png">JSONScriptInstance</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Container=Module.png" alt="Module" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Container=Module.png">Module</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Audio.png" alt="Audio" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Audio.png">Audio</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Bin.png" alt="Bin" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Bin.png">Bin</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Brackets.png" alt="Brackets" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Brackets.png">Brackets</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Build.png" alt="Build" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Build.png">Build</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Flax.png" alt="Flax" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Flax.png">Flax</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Markup.png" alt="Markup" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Markup.png">Markup</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=Shader.png" alt="Shader" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=Shader.png">Shader</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_Content=String.png" alt="String" width="64" height="64"><br>
+    <a href="./Icons/Files/File_Content=String.png">String</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=AudioClip.png" alt="AudioClip" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=AudioClip.png">AudioClip</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=BinaryFile.png" alt="BinaryFile" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=BinaryFile.png">BinaryFile</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=C#.png" alt="C#" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=C#.png">C#</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=CPP.png" alt="CPP" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=CPP.png">CPP</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=JSON.png" alt="JSON" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=JSON.png">JSON</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=Markdown.png" alt="Markdown" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=Markdown.png">Markdown</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=ShaderHLSL.png" alt="ShaderHLSL" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=ShaderHLSL.png">ShaderHLSL</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=TextFile.png" alt="TextFile" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=TextFile.png">TextFile</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_DataType=XML.png" alt="XML" width="64" height="64"><br>
+    <a href="./Icons/Files/File_DataType=XML.png">XML</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Files/File_FlaxSetting=Flax.png" alt="Flax" width="64" height="64"><br>
+    <a href="./Icons/Files/File_FlaxSetting=Flax.png">Flax</a>
+</div>
+</div>
 
 ### Icons
 
-| Icon | Name |
-|---|---|
+<div style="display: flex; flex-wrap: wrap;">
+</div>
 
 ### Platforms
 
-| Icon | Name |
-|---|---|
-| ![icon](./Icons/Platforms/Platform=Android.png) | [Android](./Icons/Platforms/Platform=Android.png) |
-| ![icon](./Icons/Platforms/Platform=Apple Ios.png) | [Apple Ios](./Icons/Platforms/Platform=Apple Ios.png) |
-| ![icon](./Icons/Platforms/Platform=Mac.png) | [Mac](./Icons/Platforms/Platform=Mac.png) |
-| ![icon](./Icons/Platforms/Platform=PS4.png) | [PS4](./Icons/Platforms/Platform=PS4.png) |
-| ![icon](./Icons/Platforms/Platform=PS5.png) | [PS5](./Icons/Platforms/Platform=PS5.png) |
-| ![icon](./Icons/Platforms/Platform=Switch.png) | [Switch](./Icons/Platforms/Platform=Switch.png) |
-| ![icon](./Icons/Platforms/Platform=Win.png) | [Win](./Icons/Platforms/Platform=Win.png) |
-| ![icon](./Icons/Platforms/Platform=Xbox One.png) | [Xbox One](./Icons/Platforms/Platform=Xbox One.png) |
-| ![icon](./Icons/Platforms/Platform=Xbox X.png) | [Xbox X](./Icons/Platforms/Platform=Xbox X.png) |
+<div style="display: flex; flex-wrap: wrap;">
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=Android.png" alt="Android" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=Android.png">Android</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=AppleIos.png" alt="AppleIos" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=AppleIos.png">AppleIos</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=Mac.png" alt="Mac" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=Mac.png">Mac</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=PS4.png" alt="PS4" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=PS4.png">PS4</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=PS5.png" alt="PS5" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=PS5.png">PS5</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=Switch.png" alt="Switch" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=Switch.png">Switch</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=Win.png" alt="Win" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=Win.png">Win</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=XboxOne.png" alt="XboxOne" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=XboxOne.png">XboxOne</a>
+</div>
+
+<div style="width: 120px; text-align: center; margin: 10px;">
+    <img src="./Icons/Platforms/Platform=XboxX.png" alt="XboxX" width="64" height="64"><br>
+    <a href="./Icons/Platforms/Platform=XboxX.png">XboxX</a>
+</div>
+</div>
 
