@@ -27,9 +27,13 @@ def url_encode(path):
 def generate_markdown_table(icons):
     table = ""
     for category, icon_list in sorted(icons.items()):
-        table += f"### {category}\n\n"
-        table += "| " + " | ".join(["Icon", "Name"] * columns) + " |\n"
-        table += "| " + " | ".join([":-:", ":-:"] * columns) + " |\n"
+        # Skip empty categories
+        if not icon_list:
+            continue
+        
+        # Add category name in a grouped cell
+        table += f"| {category} ||||||\n"
+        table += "|" + ":---:|" * columns + "\n"
         
         row_items = []
         for subcategory, icon_name in sorted(icon_list):
@@ -37,18 +41,18 @@ def generate_markdown_table(icons):
             icon_display_name = icon_name.replace(".png", "")
             icon_img = f"![{icon_display_name}]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
-            row_items.extend([icon_img, icon_link_name])
+            row_items.extend([f"{icon_img}<br>{icon_link_name}"])
             
             # When we hit the column limit, write the row
-            if len(row_items) == columns * 2:
+            if len(row_items) == columns:
                 table += "| " + " | ".join(row_items) + " |\n"
                 row_items = []
         
         # Add remaining items in the row if any
         if row_items:
             # Pad the row with empty cells if it doesn't fill all columns
-            while len(row_items) < columns * 2:
-                row_items.extend([" ", " "])
+            while len(row_items) < columns:
+                row_items.append(" ")
             table += "| " + " | ".join(row_items) + " |\n"
         
         table += "\n"
