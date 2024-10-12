@@ -35,22 +35,22 @@ def generate_markdown_table(icons):
         for subcategory, icon_name in sorted(icon_list):
             icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
             icon_display_name = icon_name.replace(".png", "")
-            icon_img = f"![icon]({icon_link})"
+            icon_img = f"![{icon_display_name}]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
-            row_items.append(f"{icon_img} | {icon_link_name}")
+            row_items.extend([icon_img, icon_link_name])
             
             # When we hit the column limit, write the row
             if len(row_items) == columns * 2:
                 table += "| " + " | ".join(row_items) + " |\n"
                 row_items = []
-
+        
         # Add remaining items in the row if any
         if row_items:
             # Pad the row with empty cells if it doesn't fill all columns
             while len(row_items) < columns * 2:
-                row_items.append(" ")
+                row_items.extend([" ", " "])
             table += "| " + " | ".join(row_items) + " |\n"
-
+        
         table += "\n"
     return table
 
@@ -64,6 +64,6 @@ icon_table = generate_markdown_table(icons)
 
 # Write the final README.md
 with open(readme_file, "w") as f:
-    f.write(readme_content + "\n" + icon_table)
+    f.write(readme_content + "\n## Icons\n\n" + icon_table)
 
 print("README.md has been updated successfully!")
