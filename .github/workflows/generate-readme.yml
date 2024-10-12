@@ -1,91 +1,34 @@
-name: Generate README
+name: Update README with Icons Table
 
 on:
   push:
     paths:
-      - 'Icons/**'
-      - 'readmehead.md'
-  workflow_dispatch:
+      - "Icons/**"  # Trigger on changes in the Icons folder
+  workflow_dispatch:  # Allows manual runs
 
 jobs:
-  generate-readme:
+  update-readme:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Set up Python
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: pip install PyGithub
+      - name: Generate Icons Table and Update README
+        run: |
+          # Combine readmehead.md and the generated table into README.md
+          python3 scripts/generate_readme.py
 
-      - name: Generate README
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Auto-update README with icons"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python - <<EOF
-          import os
-          import re
-          from github import Github
-          
-          def get_icon_url(repo, path):
-              return f"https://github.com/{repo.full_name}/blob/main/{path}"
-          
-          def generate_table(icons):
-              table = "| Icon | Name | Category |\n|------|------|----------|\n"
-              for icon in sorted(icons, key=lambda x: (x['category'], x['subcategory'], x['name'])):
-                  table += f"| ![{icon['name']}]({icon['path']}) | [{icon['name']}]({icon['url']}) | {icon['category']}/{icon['subcategory']} |\n"
-              return table
-          
-          # Initialize GitHub client
-          g = Github(os.environ['GITHUB_TOKEN'])
-          repo = g.get_repo(os.environ['GITHUB_REPOSITORY'])
-          
-          # Get all icon files
-          icons = []
-          contents = repo.get_contents("Icons")
-          while contents:
-              file_content = contents.pop(0)
-              if file_content.type == "dir":
-                  contents.extend(repo.get_contents(file_content.path))
-              else:
-                  if file_content.name.endswith('.png') and '@4x' not in file_content.name:
-                      match = re.match(r'(.+)=(.+)\.png', file_content.name)
-                      if match:
-                          subcategory, name = match.groups()
-                          category = os.path.basename(os.path.dirname(file_content.path))
-                          icons.append({
-                              'name': name,
-                              'path': file_content.path,
-                              'url': get_icon_url(repo, file_content.path),
-                              'category': category,
-                              'subcategory': subcategory
-                          })
-          
-          # Generate README content
-          with open('readmehead.md', 'r') as f:
-              readme_content = f.read()
-          
-          readme_content += "\n\n## Icons\n\n"
-          readme_content += generate_table(icons)
-          
-          # Write new README content to a file
-          with open('README.md', 'w') as f:
-              f.write(readme_content)
-          
-          print("README.md has been generated successfully.")
-          EOF
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: Update README with latest icons
-          title: Update README
-          body: This PR updates the README with the latest icons from the repository.
-          branch: update-readme
-          delete-branch: true
