@@ -31,21 +31,21 @@ def generate_markdown_table(icons):
         if not icon_list:
             continue
         
-        # Add category name in a grouped cell spanning all columns
-        table += f"|{category}|\n"
-        table += f"|{'-' * (columns * 4 - 1)}|\n"
+        # Add category name in a grouped cell
+        table += f"| {category} ||||||\n"
+        table += "|" + ":---:|" * columns + "\n"
         
         row_items = []
         for subcategory, icon_name in sorted(icon_list):
             icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
             icon_display_name = icon_name.replace(".png", "")
-            icon_img = f"<img src='{icon_link}' width='48' height='48' alt='{icon_display_name}'>"
+            icon_img = f"![{icon_display_name}]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
             row_items.extend([f"{icon_img}<br>{icon_link_name}"])
             
             # When we hit the column limit, write the row
             if len(row_items) == columns:
-                table += "|" + "|".join(row_items) + "|\n"
+                table += "| " + " | ".join(row_items) + " |\n"
                 row_items = []
         
         # Add remaining items in the row if any
@@ -53,7 +53,7 @@ def generate_markdown_table(icons):
             # Pad the row with empty cells if it doesn't fill all columns
             while len(row_items) < columns:
                 row_items.append(" ")
-            table += "|" + "|".join(row_items) + "|\n"
+            table += "| " + " | ".join(row_items) + " |\n"
         
         table += "\n"
     return table
