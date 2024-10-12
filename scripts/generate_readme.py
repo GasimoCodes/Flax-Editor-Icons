@@ -4,6 +4,7 @@ import os
 icon_dir = "Icons"
 readme_head = "readmehead.md"
 readme_file = "README.md"
+columns = 6  # Number of columns in the table
 
 # Helper function to get all icons and their categories
 def get_icons(icon_dir):
@@ -22,34 +23,51 @@ def get_icons(icon_dir):
 def url_encode(path):
     return path.replace(" ", "%20")
 
-# Generate a grid layout using HTML for the icons
-def generate_grid(icons):
-    grid = ""
+# Generate a Markdown table with 6 columns for the icons
+def generate_markdown_table(icons):
+    table = ""
     for category, icon_list in sorted(icons.items()):
-        grid += f"### {category}\n\n"
-        grid += '<div style="display: flex; flex-wrap: wrap;">\n'
+        # Skip empty categories
+        if not icon_list:
+            continue
+        
+        # Add category name in a grouped cell
+        table += f"| {category} ||||||\n"
+        table += "|" + ":---:|" * columns + "\n"
+        
+        row_items = []
         for subcategory, icon_name in sorted(icon_list):
             icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
             icon_display_name = icon_name.replace(".png", "")
-            grid += f'''
-<div style="width: 120px; text-align: center; margin: 10px;">
-    <img src="{icon_link}" alt="{icon_display_name}" width="64" height="64"><br>
-    <a href="{icon_link}">{icon_display_name}</a>
-</div>
-'''
-        grid += '</div>\n\n'
-    return grid
+            icon_img = f"![{icon_display_name}]({icon_link})"
+            icon_link_name = f"[{icon_display_name}]({icon_link})"
+            row_items.extend([f"{icon_img}<br>{icon_link_name}"])
+            
+            # When we hit the column limit, write the row
+            if len(row_items) == columns:
+                table += "| " + " | ".join(row_items) + " |\n"
+                row_items = []
+        
+        # Add remaining items in the row if any
+        if row_items:
+            # Pad the row with empty cells if it doesn't fill all columns
+            while len(row_items) < columns:
+                row_items.append(" ")
+            table += "| " + " | ".join(row_items) + " |\n"
+        
+        table += "\n"
+    return table
 
 # Read the readme head
 with open(readme_head, "r") as f:
     readme_content = f.read()
 
-# Get icons and generate grid
+# Get icons and generate the Markdown table
 icons = get_icons(icon_dir)
-icon_grid = generate_grid(icons)
+icon_table = generate_markdown_table(icons)
 
 # Write the final README.md
 with open(readme_file, "w") as f:
-    f.write(readme_content + "\n" + icon_grid)
+    f.write(readme_content + "\n## Icons\n\n" + icon_table)
 
 print("README.md has been updated successfully!")
