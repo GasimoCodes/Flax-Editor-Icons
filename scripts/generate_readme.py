@@ -24,12 +24,10 @@ def url_encode(path):
     return path.replace(" ", "%20")
 
 # Generate a Markdown table with 6 columns for the icons
-def generate_markdown_table(icons):
+def generate_markdown_grid(icons):
     table = ""
     for category, icon_list in sorted(icons.items()):
         table += f"### {category}\n\n"
-        table += "| " + " | ".join(["Icon", "Name"] * columns) + " |\n"
-        table += "| " + " | ".join([":-:", ":-:"] * columns) + " |\n"
         
         row_items = []
         for subcategory, icon_name in sorted(icon_list):
@@ -37,17 +35,19 @@ def generate_markdown_table(icons):
             icon_display_name = icon_name.replace(".png", "")
             icon_img = f"![icon]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
-            row_items.append(f"{icon_img} | {icon_link_name}")
+            
+            # Place both the image and name in the same cell
+            row_items.append(f"{icon_img}<br>{icon_link_name}")
             
             # When we hit the column limit, write the row
-            if len(row_items) == columns * 2:
+            if len(row_items) == columns:
                 table += "| " + " | ".join(row_items) + " |\n"
                 row_items = []
 
         # Add remaining items in the row if any
         if row_items:
             # Pad the row with empty cells if it doesn't fill all columns
-            while len(row_items) < columns * 2:
+            while len(row_items) < columns:
                 row_items.append(" ")
             table += "| " + " | ".join(row_items) + " |\n"
 
@@ -60,7 +60,7 @@ with open(readme_head, "r") as f:
 
 # Get icons and generate the Markdown table
 icons = get_icons(icon_dir)
-icon_table = generate_markdown_table(icons)
+icon_table = generate_markdown_grid(icons)
 
 # Write the final README.md
 with open(readme_file, "w") as f:
