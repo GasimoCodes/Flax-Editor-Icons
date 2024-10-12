@@ -23,8 +23,8 @@ def get_icons(icon_dir):
 def url_encode(path):
     return path.replace(" ", "%20")
 
-# Generate a Markdown table with 6 columns for the icons
-def generate_markdown_grid(icons):
+# Generate a Markdown table with 6 columns for the icons (without headers)
+def generate_markdown_table(icons):
     table = ""
     for category, icon_list in sorted(icons.items()):
         table += f"### {category}\n\n"
@@ -35,8 +35,6 @@ def generate_markdown_grid(icons):
             icon_display_name = icon_name.replace(".png", "")
             icon_img = f"![icon]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
-            
-            # Place both the image and name in the same cell
             row_items.append(f"{icon_img}<br>{icon_link_name}")
             
             # When we hit the column limit, write the row
@@ -60,7 +58,7 @@ with open(readme_head, "r") as f:
 
 # Get icons and generate the Markdown table
 icons = get_icons(icon_dir)
-icon_table = generate_markdown_grid(icons)
+icon_table = generate_markdown_table(icons)
 
 # Write the final README.md
 with open(readme_file, "w") as f:
