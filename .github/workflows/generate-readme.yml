@@ -10,6 +10,9 @@ on:
 jobs:
   generate-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v3
       
@@ -71,22 +74,18 @@ jobs:
           readme_content += "\n\n## Icons\n\n"
           readme_content += generate_table(icons)
           
-          # Update README.md
-          readme_file = repo.get_contents("README.md")
-          repo.update_file(
-              path="README.md",
-              message="Update README with latest icons",
-              content=readme_content,
-              sha=readme_file.sha
-          )
+          # Write new README content to a file
+          with open('README.md', 'w') as f:
+              f.write(readme_content)
           
-          print("README.md has been updated successfully.")
+          print("README.md has been generated successfully.")
           EOF
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Update README with latest icons" || echo "No changes to commit"
-          git push
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Update README with latest icons
+          title: Update README
+          body: This PR updates the README with the latest icons from the repository.
+          branch: update-readme
+          delete-branch: true
