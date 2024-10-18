@@ -40,8 +40,8 @@ Ever-growing repository of [Flax Engine](https://github.com/FlaxEngine/FlaxEngin
 
 | Platforms ||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Android](./Icons/Platforms/Platform=Android.png)<br>[Android](./Icons/Platforms/Platform=Android.png) | ![AppleIos](./Icons/Platforms/Platform=AppleIos.png)<br>[AppleIos](./Icons/Platforms/Platform=AppleIos.png) | ![Mac](./Icons/Platforms/Platform=Mac.png)<br>[Mac](./Icons/Platforms/Platform=Mac.png) | ![PS4](./Icons/Platforms/Platform=PS4.png)<br>[PS4](./Icons/Platforms/Platform=PS4.png) | ![PS5](./Icons/Platforms/Platform=PS5.png)<br>[PS5](./Icons/Platforms/Platform=PS5.png) | ![Switch](./Icons/Platforms/Platform=Switch.png)<br>[Switch](./Icons/Platforms/Platform=Switch.png) |
-| ![Win](./Icons/Platforms/Platform=Win.png)<br>[Win](./Icons/Platforms/Platform=Win.png) | ![XboxOne](./Icons/Platforms/Platform=XboxOne.png)<br>[XboxOne](./Icons/Platforms/Platform=XboxOne.png) | ![XboxX](./Icons/Platforms/Platform=XboxX.png)<br>[XboxX](./Icons/Platforms/Platform=XboxX.png) |   |   |   |
+| ![Android](./Icons/Platforms/Platform=Android.png)<br>[Android](./Icons/Platforms/Platform=Android.png) | ![Apple](./Icons/Platforms/Platform=Apple.png)<br>[Apple](./Icons/Platforms/Platform=Apple.png) | ![AppleIos](./Icons/Platforms/Platform=AppleIos.png)<br>[AppleIos](./Icons/Platforms/Platform=AppleIos.png) | ![Mac](./Icons/Platforms/Platform=Mac.png)<br>[Mac](./Icons/Platforms/Platform=Mac.png) | ![PS4](./Icons/Platforms/Platform=PS4.png)<br>[PS4](./Icons/Platforms/Platform=PS4.png) | ![PS5](./Icons/Platforms/Platform=PS5.png)<br>[PS5](./Icons/Platforms/Platform=PS5.png) |
+| ![Switch](./Icons/Platforms/Platform=Switch.png)<br>[Switch](./Icons/Platforms/Platform=Switch.png) | ![Win](./Icons/Platforms/Platform=Win.png)<br>[Win](./Icons/Platforms/Platform=Win.png) | ![XboxOne](./Icons/Platforms/Platform=XboxOne.png)<br>[XboxOne](./Icons/Platforms/Platform=XboxOne.png) | ![XboxX](./Icons/Platforms/Platform=XboxX.png)<br>[XboxX](./Icons/Platforms/Platform=XboxX.png) |   |   |
 
 | Tabs ||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|
