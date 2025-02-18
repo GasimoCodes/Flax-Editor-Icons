@@ -10,9 +10,16 @@ columns = 6  # Number of columns in the table
 def get_icons(icon_dir):
     icons = {}
     for root, _, files in os.walk(icon_dir):
-        category = os.path.basename(root)
+        # Get the relative path from icon_dir
+        rel_path = os.path.relpath(root, icon_dir)
+        if rel_path == '.':
+            category = ''
+        else:
+            category = rel_path
+        
         if category not in icons:
             icons[category] = []
+            
         for file in files:
             if file.endswith(".png") and not file.endswith("@4x.png"):
                 subcategory, icon_name = file.split("=")
@@ -37,7 +44,12 @@ def generate_markdown_table(icons):
         
         row_items = []
         for subcategory, icon_name in sorted(icon_list):
-            icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
+            # Construct the full path including all nested folders
+            if category:
+                icon_link = url_encode(f"./Icons/{category}/{subcategory}={icon_name}")
+            else:
+                icon_link = url_encode(f"./Icons/{subcategory}={icon_name}")
+                
             icon_display_name = icon_name.replace(".png", "")
             icon_img = f"![{icon_display_name}]({icon_link})"
             icon_link_name = f"[{icon_display_name}]({icon_link})"
